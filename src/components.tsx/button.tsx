@@ -5,15 +5,17 @@ interface ButtonProps {
   title: string
   leftIcon?: React.ReactNode
   containerClass?: string
+  rightIcon?: React.ReactNode
 }
 
-const Button: React.FC<ButtonProps> = ({ id, title, leftIcon, containerClass }) => {
+const Button: React.FC<ButtonProps> = ({ id, title, leftIcon, containerClass, rightIcon }) => {
   return (
     <button
       id={id}
       className={`group relative z-10 w-fit cursor-pointer rounded-full overflow-hidden px-7 py-3 text-black flex items-center gap-2 ${containerClass}`}
     >
       {leftIcon && <span className="mr-2">{leftIcon}</span>}
+      {rightIcon && <span className="mr-2">{rightIcon}</span>}
       <span className='font-general text-xs uppercase'>{title}</span>
     </button>
   )

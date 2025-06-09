@@ -87,13 +87,13 @@ const Hero = () => {
     <div className='relative h-dvh w-screen overflow-x-hidden'>
 
       {isLoading && (
-      <div className='flex-center absolute z-[100] w-screen overflow-hidden bg-violet-50'>
-        <div className='three-body'>
-          <div className='three-body__dot' />
-          <div className='three-body__dot' />
-          <div className='three-body__dot' />
+        <div className='flex-center absolute z-[100] w-screen overflow-hidden bg-violet-50'>
+          <div className='three-body'>
+            <div className='three-body__dot' />
+            <div className='three-body__dot' />
+            <div className='three-body__dot' />
+          </div>
         </div>
-      </div>
       )}
       <div
         id='video-frame'
@@ -117,7 +117,13 @@ const Hero = () => {
 
           <video ref={previewVideoRef} src={getVideoSrc(currentIndex)} loop muted id='next-video' className='absolute-center invisible absolute size-64 z-20 object-conver object-center' onLoadedData={handleVideoLoad} />
 
-          <video src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)} loop autoPlay muted className='absolute left-0 top-0 size-full object-cover object-center' onLoadedData={handleVideoLoad} />
+          <video
+            src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
+            loop
+            // autoPlay
+            muted
+            className='absolute left-0 top-0 size-full object-cover object-center'
+            onLoadedData={handleVideoLoad} />
         </div>
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">G <b>a</b>ming</h1>
 

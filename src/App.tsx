@@ -1,11 +1,13 @@
 import Hero from "./components.tsx/hero"
+import About from "./components.tsx/about"
+import Navbar from "./components.tsx/Navbar"
 
 const App = () => {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Navbar />
       <Hero />
-
-      <section className="z-0 min-h-screen bg-blue-500" />
+      <About />
     </main>
   )
 }
