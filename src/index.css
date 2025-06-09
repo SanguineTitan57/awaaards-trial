@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @layer base {
   @font-face {
     font-family: "circular-web";
@@ -52,13 +47,6 @@
   --color-violet-300: #5724ff;
   --color-yelllow-100: #8e983f;
   --color-yelllow-300: #edff66;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
