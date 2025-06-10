@@ -4,6 +4,7 @@ import gsap from 'gsap';
 type AnimatedTitleProps = {
     title?: string;
     containerClass?: string;
+    sectionID?: string;
 }
 
 const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ title, containerClass }) => {

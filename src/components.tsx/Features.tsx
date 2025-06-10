@@ -10,7 +10,7 @@ type BentoCardProps = {
 }
 
 type BentoTiltProps = {
-    children?: any
+    children?: React.ReactNode
     className?: string
 }
 
@@ -42,7 +42,7 @@ const BentoTilt: React.FC<BentoTiltProps> = ({ children, className = '' }) => {
     )
 }
 
-const BentoCard: React.FC<BentoCardProps> = ({ title, description, src, isComingSoon }) => {
+const BentoCard: React.FC<BentoCardProps> = ({ title, description, src }) => {
     return (
         <div className='relative size-full'>
             <video
@@ -84,7 +84,6 @@ const Features = () => {
                             <>radia<b>n</b>t</>
                         }
                         description='A cross platform metagame app, turning your activites across Web2 and Web3 fames into a rewarding adventure'
-                        isComingSoon
                     />
                 </BentoTilt>
 
