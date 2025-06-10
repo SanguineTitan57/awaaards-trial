@@ -1,10 +1,9 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { TiLocationArrow } from 'react-icons/ti'
 
 type BentoCardProps = {
     title?: React.ReactNode
     description?: string
-    isComingSoon?: boolean
     src?: string
 
 }
@@ -97,7 +96,6 @@ const Features = () => {
                                 </>
                             }
                             description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
-                            isComingSoon
                         />
                     </BentoTilt>
                     <div className="bento-tile_1 ms-32 row-span-1 md:col-span-1 md:ms-0">
