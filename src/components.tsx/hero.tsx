@@ -115,7 +115,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <video ref={previewVideoRef} src={getVideoSrc(currentIndex)} loop muted id='next-video' className='absolute-center invisible absolute size-64 z-20 object-conver object-center' onLoadedData={handleVideoLoad} />
+          <video ref={previewVideoRef} src={getVideoSrc(currentIndex)} loop muted id='next-video' className='absolute-center invisible absolute size-64 z-20 object-cover object-center' onLoadedData={handleVideoLoad} />
 
           <video
             src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
